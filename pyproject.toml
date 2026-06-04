@@ -1,0 +1,16 @@
+[project]
+name = "tasktrack"
+version = "0.1.0"
+description = "A simple CLI task tracker"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+tasktrack = "tasktrack.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
